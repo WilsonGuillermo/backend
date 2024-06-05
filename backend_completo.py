@@ -135,20 +135,24 @@ def stockProducto():
 
     ###############################""
     if accion == "Unico":
-        #respuesta = resultado[0]
 
-        nombre = resultado[0]
+        if resultado is None:
+            return jsonify({'error': 'El producto no esta en stock'}), 401
+        else:
+            #respuesta = resultado[0]
 
-        cantidad = resultado[1]
+            nombre = resultado[0]
 
-        ejecutado = "OK"
+            cantidad = resultado[1]
 
-        #cantidad = resultado[1]
+            ejecutado = "OK"
 
-        # Todo salio bien
-        #print("el mensaje recibido es %s: "%resultado)
-        return jsonify({'producto': nombre},{'cantidad': cantidad},{'resultado': ejecutado})
-            
+            #cantidad = resultado[1]
+
+            # Todo salio bien
+            #print("el mensaje recibido es %s: "%resultado)
+            return jsonify({'producto': nombre},{'cantidad': cantidad},{'resultado': ejecutado})
+                
     else:
         if accion == "Todo":
             return jsonify(resultado)

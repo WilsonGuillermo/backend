@@ -84,9 +84,11 @@ class mi_base(object):
         
                 consulta = "select nombre, cantidad from ingredientes where nombre = '%s'"%producto[0]
 
-                self.ejecutar_requete(consulta)
+                if self.ejecutar_requete(consulta):
 
-                return self.cursor.fetchone()
+                    return self.cursor.fetchone()
+                
+                else:
 
     # Ejecutar consulta: recuperar la lista de productos
     def consultacion(self):
