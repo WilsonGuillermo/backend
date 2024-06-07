@@ -35,6 +35,8 @@ def is_valid_login(login):
 def agregarCuenta():
     # Creacion de la cuenta utilisador
 
+    data = request.get_json()
+
     nombre = request.json['name']
 
     apellido = request.json['surname']
@@ -61,7 +63,7 @@ def agregarCuenta():
 
     bdd = mibase.mi_base()
 
-    papel = bdd.creacion_usuario(requete)
+    papel = bdd.creacion_usuario(data)
 
     print("le profil es: ", papel)
 
