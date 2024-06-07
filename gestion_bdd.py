@@ -47,6 +47,20 @@ class mi_base(object):
 
         self.ejecutar_requete(agregando)
         self.ejecutar_requete("commit")
+
+    def creacion_usuario(self, usuario):
+        """ Agregando usuario """
+
+        print("el usuario recibido para agregar es: ", usuario)
+
+        agregando_usuario = "insert into usuarios (nombre, apellido, nombre_usuario, contrasena, fecha_nacimiento, mail, perfil ) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s')"%( usuario[0], usuario[1], usuario[2], cryptar_password(usuario[3]), usuario[4], usuario[5], usuario[6] )
+        
+        print("el candidato recibido para agregar es: ", usuario)
+        print("la requete es: ", agregando_usuario)
+
+        self.ejecutar_requete(agregando_usuario)
+        self.ejecutar_requete("commit")
+        
     # Convertir el segundo elemento de una lista de decimal a una cadena de caracteres
     def convertir_decimales_a_cararacteres(self, lista):
         nueva_lista = []
