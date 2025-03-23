@@ -4,6 +4,8 @@
 
 from flask import Flask, request, jsonify
 import gestion_bdd as mibase
+import re
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -21,59 +23,147 @@ def is_valid_password(password):
     return True
 
 def is_valid_login(login):
-    requete = "select * from usuarios where nombre_usuario = '%s'" % (login)
+    requete = "select count(*) from usuarios where nombre_usuario = '%s'"%login
 
     print("la requete es :", requete)
 
     bdd = mibase.mi_base()
 
-    papel = bdd.consultacion_usuario(requete)
+    papel = bdd.verificacion_usuario(requete)
 
-    return papel
+    if papel[0] == 0:
+        return True
+    else:
+        return False
+
+@app.route('/verificarCuenta/<login>', methods=['GET'])
+def verificarCuenta(login):
+
+    #usuario = request.json['login']
+
+    print("el valor a enviar ahora mismo es: %s"%login)
+
+    requete = "select count(*) as count from usuarios where nombre_usuario = '%s'"%login
+
+    print("la requete es : %s"%requete)
+    
+    bdd = mibase.mi_base()
+
+    papel = bdd.verificacion_usuario(requete)
+
+    print("lo recuperado es")
+
+    print(papel)
+
+
+    if papel[0] == 0:
+        return jsonify({"continuar creacion": "Login valido"}), 200
+    else:
+        return jsonify({"error": "Login already exists"}), 409
 
 @app.route('/agregarCuenta', methods=['POST'])
 def agregarCuenta():
     # Creacion de la cuenta utilisador
+    try:
+        data = request.get_json()
 
-    data = request.get_json()
+        print(data)
 
-    nombre = request.json['name']
+        nombre = request.json['name']
 
-    apellido = request.json['surname']
+        apellido = request.json['surname']
 
-    alias = request.json['login']
+        nombre_usuario = request.json['login']
 
-    contrasena = request.json['password']
+        contrasena = request.json['password']
 
-    fecha_nacimiento = request.json['birth_date']
+        fecha_de_nacimiento = request.json['birth_date']
 
-    mail = request.json['email']
+        email = request.json['email']
 
-    profil = request.json['profil']
+        rol = request.json['role']
 
-    if not is_valid_password(password):
-        return jsonify({"error": "Invalid password"}), 400
+        creacion_date = datetime.now()
 
-    if is_valid_login(login):
-        return jsonify({"error": "Login already exists"}), 409
+        if not all([nombre, apellido, nombre_usuario, email, contrasena, fecha_de_nacimiento, rol]):
+            return jsonify({"error": "Todos los campos son obligatorios"}), 400
 
-    requete = "insert into usuarios (nombre, apellido, nombre_usuario, email, contrasena, fecha_nacimiento, profil) values ('name', 'surname', 'login', 'email', 'password', 'birth_date', 'profil' );"
+        if not is_valid_password(contrasena):
+            print(contrasena)
+            return jsonify({"error": "Invalid password"}), 400
 
-    print("la requete es :", requete)
+        if not is_valid_login(nombre_usuario):
+            return jsonify({"error": "Login already exists"}), 409
+        
+        requete = "insert into usuarios (nombre, apellido, nombre_usuario, email, contrasena, fecha_de_nacimiento, rol, fecha_creacion_cuenta) values ( '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')"%(nombre, apellido, nombre_usuario, email, contrasena, fecha_de_nacimiento, rol, creacion_date)
 
-    bdd = mibase.mi_base()
+        print("la requete bis es :", requete)
 
-    papel = bdd.creacion_usuario(data)
+        bdd = mibase.mi_base()
 
-    print("le profil es: ", papel)
+        bdd.creacion_usuario(requete)
 
-    if papel:
-        # El usuario a sido creado
+            # El usuario a sido creado
         return jsonify({"message": "User created successfully"}), 201
-        # return jsonify({'user_id': user['id'], 'username': user['username'], 'email': user['email']})
-    else:
-        # Si el usuario no existe, retornar un mensaje de error
-        return jsonify({'error': 'Creacion del Usuario'}), 401
+            # return jsonify({'user_id': user['id'], 'username': user['username'], 'email': user['email']})
+    except Exception as e:
+        # Si el usuario no ha sido creado, retornar un mensaje de error
+        return jsonify({'error': str(e)}), 400
+
+@app.route('/modificarCuenta/<int:id>', methods=['PUT'])
+def modificarCuenta(id):
+    # Creacion de la cuenta utilisador
+    try:
+        data = request.get_json()
+
+        print(data)
+
+        nombre = request.json['name']
+
+        apellido = request.json['lastname']
+
+        rol = request.json['role']
+
+        if not nombre or not apellido or not rol:
+            return jsonify({"mensaje": "Todos los campos son obligatorios"}), 400
+
+        actualizando = "update usuarios set nombre = '%s', apellido = '%s', rol = '%s' where id_usuario = %3i"%( nombre, apellido, rol, id)
+
+        print("la requete avant es :", actualizando)
+
+        bdd = mibase.mi_base()
+
+        bdd.modificar_usuario(actualizando)
+
+        # El usuario a sido modificado
+        return jsonify({"message": "Usuario modificado correctamente"}), 200
+    except Exception as e:
+        # Si el usuario no ha sido modificado, retornar un mensaje de error
+        return jsonify({'error': str(e)}), 400
+
+@app.route('/suprimirCuenta/<userId>', methods=['DELETE'])
+def suprimirCuenta(userId):
+    # Suprimir la cuenta utilisador
+
+    try:
+        print("el valor a enviar ahora mismo es: %s"%userId)
+
+        requete = "delete from usuarios where id_usuario = '%s'"%userId
+
+        print("la requete es : %s"%requete)
+
+        bdd = mibase.mi_base()
+
+        bdd.suprimer_usuario(requete)
+
+
+        # El usuario a sido suprimido
+        return jsonify({"message": "User deleted successfully"}), 200
+
+    except Exception as e:
+        # Si el usuario no ha sido creado, retornar un mensaje de error
+        return jsonify({'error': str(e)}), 400
+
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -85,7 +175,7 @@ def login():
 
     print("el valor a enviar ahora mismo es: ",usuario," y ", contrasena)
 
-    requete = "select * from usuarios where nombre_usuario = '%s' and contrasena = '%s'"%(usuario,contrasena)
+    requete = "select rol from usuarios where nombre_usuario = '%s' and contrasena = '%s'"%(usuario,contrasena)
 
     print("la requete es :", requete)
     
@@ -124,7 +214,54 @@ def ingredientes_referencial():
     else:
         # Si el usuario no existe, retornar un mensaje de error
         return jsonify({'error': 'Usuario o contraseña incorrectos'}), 401
+
+@app.route('/usuarios', methods=['GET'])
+def usuarios():
+    # Usar request.args para obtener los parámetros de la consulta (query string)
+    requete = "select * from usuarios"
+
+    print("la requete es :", requete)
+
+    bdd = mibase.mi_base()
+
+    lista_usuarios = bdd.consultacion_generique(requete)
+
+    usuarios_ok = [{"id" : usuarios[0], "name": usuarios[1], "lastname": usuarios[2], "rol": usuarios[5]} for usuarios in lista_usuarios]
+
+    print("los usuarios son: ",usuarios_ok)
+
+    if lista_usuarios:
+        # Si el usuario existe, retornar sus datos
+        return jsonify(usuarios_ok)
+        #return jsonify({'user_id': user['id'], 'username': user['username'], 'email': user['email']})
+    else:
+        # Si el usuario no existe, retornar un mensaje de error
+        return jsonify({'error': 'No hay profiles!!'}), 401
+
+@app.route('/roles', methods=['GET'])
+def roles():
+
+    # Usar request.args para obtener los parámetros de la consulta (query string)
+    requete = "select * from roles"
+
+    print("la requete es :", requete)
+    
+    bdd = mibase.mi_base()
+
+    lista_roles = bdd.consultacion_generique(requete)
+
+    roles_ok = [{"id" : roles[0], "role": roles[1]} for roles in lista_roles]
         
+    print("los roles son: ",roles_ok)
+
+    if lista_roles:
+        # Si el usuario existe, retornar sus datos
+        return jsonify(roles_ok)
+        #return jsonify({'user_id': user['id'], 'username': user['username'], 'email': user['email']})
+    else:
+        # Si el usuario no existe, retornar un mensaje de error
+        return jsonify({'error': 'No hay profiles!!'}), 401
+
 @app.route('/cantidadProducto', methods=['POST'])
 def cantidadProducto():
     # Obtener los datos del formulario enviado en la solicitud
@@ -186,11 +323,13 @@ def stockProducto():
 
     accion = request.json['accion']
 
-    producto_al_dia = ( nombre, accion)
+    producto_al_dia = (nombre, accion)
 
     bdd = mibase.mi_base()
 
-    print("Vamos a solicitar el stock del producto ", nombre,)
+    print("Vamos a solicitar el stock del producto ", nombre)
+
+    print("llamamos la funcion consultacionStock")
     
     resultado = bdd.consultacionStock(producto_al_dia)
     
@@ -199,6 +338,8 @@ def stockProducto():
 
     if accion == "Unico":
 
+        print("aqui estoy, Unico")
+        
         if resultado is None:
             return jsonify({'error': 'El producto no esta en stock'}), 401
         else:

@@ -24,13 +24,6 @@ class mi_base(object):
         # Crear un cursor para ejecutar consultas "
         self.cursor = self.conexion.cursor()
 
-    # Ejecutar insercion
-    #def insercion(self):
-    #    consulta = "insert into ingredientes (nombre, cantidad, fecha_vencimiento, tipo) values ('Arroz', '5', '2026-04-14', 'cereales');"
-    #    self.cursor.execute(consulta)
-    #    validacion="commit;"
-    #    self.cursor.execute(validacion)
-
     # Ejecutar insercion: Agregar un producto
     def agregar(self, producto):
         """ Agregando ingrediente """
@@ -53,13 +46,14 @@ class mi_base(object):
 
         print("el usuario recibido para agregar es: ", usuario)
 
-        agregando_usuario = "insert into usuarios (nombre, apellido, nombre_usuario, contrasena, fecha_nacimiento, mail, perfil ) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s')"%( usuario[0], usuario[1], usuario[2], cryptar_password(usuario[3]), usuario[4], usuario[5], usuario[6] )
+        #agregando_usuario = "insert into usuarios (nombre, apellido, nombre_usuario, contrasena, fecha_nacimiento, mail, perfil ) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s')"%( usuario[0], usuario[1], usuario[2], cryptar_password(usuario[3]), usuario[4], usuario[5], usuario[6] )
         
-        print("el candidato recibido para agregar es: ", usuario)
-        print("la requete es: ", agregando_usuario)
+        #print("el candidato recibido para agregar es: ", usuario)
+        #print("la requete es: ", agregando_usuario)
 
-        self.ejecutar_requete(agregando_usuario)
+        self.ejecutar_requete(usuario)
         self.ejecutar_requete("commit")
+
         
     # Convertir el segundo elemento de una lista de decimal a una cadena de caracteres
     def convertir_decimales_a_cararacteres(self, lista):
@@ -71,8 +65,12 @@ class mi_base(object):
 
     # Ejecutar consulta: recuperar la lista de productos
     def consultacionStock(self, producto):
+
+        print("la demanda es........", producto[1])
         
         if producto[1] == "Todo":
+
+            print("________________TODO___________________")
 
             listaDeProductos = []
 
@@ -93,16 +91,25 @@ class mi_base(object):
 
             return listaDeProductos
 
-        else:
-            if producto[1] == "Unico":
+        elif producto[1] == "Unico":
+
+            print("--------------------UNICO----------------")
         
-                consulta = "select nombre, cantidad from ingredientes where nombre = '%s'"%producto[0]
+            consulta = "select nombre, cantidad from ingredientes where nombre = '%s'"%producto[0]
 
-                if self.ejecutar_requete(consulta):
+            print(consulta)
 
-                    return self.cursor.fetchone()
-                
-                else:
+            #////////////////
+            
+            self.ejecutar_requete(consulta)
+            #self.cursor.execute(producto)
+
+            resultado = self.cursor.fetchone()
+            print("lo q encontro es: ",resultado)
+
+            return resultado
+            
+
 
     # Ejecutar consulta: recuperar la lista de productos
     def consultacion(self):
@@ -140,23 +147,54 @@ class mi_base(object):
             print("el elemento si esta en la tabla")
             return True
     
+        
     # Ejecutar consulta simple
-    def consultacion_usuario(self, producto):
-        print("la consultacion es :", producto)
-        self.ejecutar_requete(producto)
+    def consultacion_usuario(self, usuario):
+        print("la consultacion es : %s"%usuario)
+        self.ejecutar_requete(usuario)
         #self.cursor.execute(producto)
 
         resultado = self.cursor.fetchone()
-        print("lo q encontro es: ",resultado)
+        print("lo q encontro es: %s"%resultado)
+
         if resultado is None:
-            print("la interrogacion: ",producto," no esta")
+            print("la interrogacion no esta: %s"%usuario)
             return False
         else:
-            print("la interrogacion: ",producto," si esta")
+            print("la interrogacion esta: %s"%usuario)
 
-            print("le rol es: ",resultado[3])
+        print("le rol es: %s"%resultado[0])
             #return True
-            return resultado[3]
+        return resultado[0]
+    
+    def verificacion_usuario(self, usuario):
+        print("la consultacion es : %s"%usuario)
+        self.ejecutar_requete(usuario)
+        #self.cursor.execute(producto)
+
+        resultado = self.cursor.fetchone()
+        print("lo q encontro es: %s"%resultado)
+
+            #return True
+        return resultado
+
+    def suprimer_usuario(self, usuario):
+        print("Vamos a suprimir el usuario : %s"%usuario)
+        self.ejecutar_requete(usuario)
+
+        self.ejecutar_requete("commit")
+
+        return True
+
+    def modificar_usuario(self, usuario):
+
+        print("Esta es la requete para modificar el usuario : %s"%usuario)
+
+        self.ejecutar_requete(usuario)
+
+        self.ejecutar_requete("commit")
+
+        return True
         
     # Ejecutar consulta simple
     def consultacion_referencial(self, producto):
@@ -299,8 +337,8 @@ class mi_base(object):
 if __name__ == "__main__" :
     #controlando = Kontrolador()
     probando = mi_base()
-    probando.insercion()
-    probando.update()
+    probando.consultacion_usuario("select nombre_usuario from usuarios where nombre_usuario = 'felipe'")
+    #probando.update()
     probando.consultacion()
     probando.fin()
     #probando.gestion_del_menu()

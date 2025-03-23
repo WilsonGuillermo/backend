@@ -1,22 +1,30 @@
-""" programa Python para crear my backend """
+""" Ejemplo de Script para Iniciar Ambos Backends
 
-from flask import Flask, request, jsonify
+Crear un script `run_both_backends.py` que maneje la inicialización de ambos backends:
 
-app = Flask(__name__)
+"""
 
-@app.route('/login', methods=['POST'])
-def login():
-    # Aquí iría tu lógica para autenticar al usuario y devolver los datos del menú
-    # Usar request.json para obtener los datos enviados en la solicitud
-    return jsonify({'user_id': '123', 'menu': ['plato1', 'plato2']})
+import multiprocessing
+from backend_producto import create_app as create_app_new
+from backend_usuario import create_app as create_app_main
 
-@app.route('/ingredients', methods=['GET'])
-def search_ingredients():
-    # Aquí iría tu lógica para buscar ingredientes
-    # Usar request.args para obtener los parámetros de la consulta (query string)
-    query = request.args.get('q')
-    return jsonify([{'id': '1', 'name': 'Ingrediente 1'}, {'id': '2', 'name': 'Ingrediente 2'}])
+def run_main_backend():
+    app = create_app_main()
+    app.run(host='0.0.0.0', port=5000, debug=True)
+
+def run_new_backend():
+    app = create_app_new()
+    app.run(host='0.0.0.0', port=5001, debug=True)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    # Crear los procesos para cada backend
+    p1 = multiprocessing.Process(target=run_main_backend)
+    p2 = multiprocessing.Process(target=run_new_backend)
 
+    # Iniciar ambos procesos
+    p1.start()
+    p2.start()
+
+    # Esperar a que ambos procesos terminen
+    p1.join()
+    p2.join()
