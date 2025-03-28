@@ -18,7 +18,7 @@ class mi_base(object):
             host = "localhost",
             user = "majo",
             password = "WilsonMemo_1964",
-            database = "boutique"
+            database = "Cali"
         )
 
         # Crear un cursor para ejecutar consultas "
