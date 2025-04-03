@@ -1,0 +1,677 @@
+Tipo de tienda;Producto de base;Producto variacion precio;Producto variacion stock;Atributo variacion nombre;Atributo variacion valor
+Boutique;Camisas Mujeres;42;35;Mangas;Cortas
+Boutique;Camisas Mujeres;42;35;Mangas;Largas
+Boutique;Camisas Mujeres;42;35;Tallas;S
+Boutique;Camisas Mujeres;42;35;Tallas;M
+Boutique;Camisas Mujeres;42;35;Tallas;L
+Boutique;Camisas Mujeres;42;35;Tallas;X
+Boutique;Camisas Mujeres;42;35;Tallas;XL
+Boutique;Camisas Mujeres;42;35;Tallas;XXL
+Boutique;Camisas Mujeres;42;35;Color;Azul
+Boutique;Camisas Mujeres;42;35;Color;Blanca
+Boutique;Camisas Mujeres;42;35;Color;Roja
+Boutique;Camisas Mujeres;42;35;Color;Verde
+Boutique;Camisas Mujeres;42;35;Color;Rosada
+Boutique;Camisas Mujeres;42;35;Color;Amarilla
+Boutique;Camisas Mujeres;42;35;Color;Morada
+Boutique;Camisas Mujeres;42;35;Color;Estampada
+Boutique;Camisas Mujeres;60;45;Mangas;Cortas
+Boutique;Camisas Mujeres;60;45;Mangas;Largas
+Boutique;Camisas Mujeres;60;45;Tallas;S
+Boutique;Camisas Mujeres;60;45;Tallas;M
+Boutique;Camisas Mujeres;60;45;Tallas;L
+Boutique;Camisas Mujeres;60;45;Tallas;X
+Boutique;Camisas Mujeres;60;45;Tallas;XL
+Boutique;Camisas Mujeres;60;45;Tallas;XXL
+Boutique;Camisas Mujeres;60;45;Color;Azul
+Boutique;Camisas Mujeres;60;45;Color;Blanca
+Boutique;Camisas Mujeres;60;45;Color;Roja
+Boutique;Camisas Mujeres;60;45;Color;Verde
+Boutique;Camisas Mujeres;60;45;Color;Rosada
+Boutique;Camisas Mujeres;60;45;Color;Amarilla
+Boutique;Camisas Mujeres;60;45;Color;Morada
+Boutique;Camisas Mujeres;60;45;Color;Estampada
+Boutique;Camisas Mujeres;27;40;Mangas;Cortas
+Boutique;Camisas Mujeres;27;40;Mangas;Largas
+Boutique;Camisas Mujeres;27;40;Tallas;S
+Boutique;Camisas Mujeres;27;40;Tallas;M
+Boutique;Camisas Mujeres;27;40;Tallas;L
+Boutique;Camisas Mujeres;27;40;Tallas;X
+Boutique;Camisas Mujeres;27;40;Tallas;XL
+Boutique;Camisas Mujeres;27;40;Tallas;XXL
+Boutique;Camisas Mujeres;27;40;Color;Azul
+Boutique;Camisas Mujeres;27;40;Color;Blanca
+Boutique;Camisas Mujeres;27;40;Color;Roja
+Boutique;Camisas Mujeres;27;40;Color;Verde
+Boutique;Camisas Mujeres;27;40;Color;Rosada
+Boutique;Camisas Mujeres;27;40;Color;Amarilla
+Boutique;Camisas Mujeres;27;40;Color;Morada
+Boutique;Camisas Mujeres;27;40;Color;Estampada
+Boutique;Camisas Mujeres;32;50;Mangas;Cortas
+Boutique;Camisas Mujeres;32;50;Mangas;Largas
+Boutique;Camisas Mujeres;32;50;Tallas;S
+Boutique;Camisas Mujeres;32;50;Tallas;M
+Boutique;Camisas Mujeres;32;50;Tallas;L
+Boutique;Camisas Mujeres;32;50;Tallas;X
+Boutique;Camisas Mujeres;32;50;Tallas;XL
+Boutique;Camisas Mujeres;32;50;Tallas;XXL
+Boutique;Camisas Mujeres;32;50;Color;Azul
+Boutique;Camisas Mujeres;32;50;Color;Blanca
+Boutique;Camisas Mujeres;32;50;Color;Roja
+Boutique;Camisas Mujeres;32;50;Color;Verde
+Boutique;Camisas Mujeres;32;50;Color;Rosada
+Boutique;Camisas Mujeres;32;50;Color;Amarilla
+Boutique;Camisas Mujeres;32;50;Color;Morada
+Boutique;Camisas Mujeres;32;50;Color;Estampada
+Boutique;Camisas Hombres;30;45;Mangas;Cortas
+Boutique;Camisas Hombres;30;45;Mangas;Largas
+Boutique;Camisas Hombres;30;45;Tallas;S
+Boutique;Camisas Hombres;30;45;Tallas;M
+Boutique;Camisas Hombres;30;45;Tallas;L
+Boutique;Camisas Hombres;30;45;Tallas;X
+Boutique;Camisas Hombres;30;45;Tallas;XL
+Boutique;Camisas Hombres;30;45;Color;Azul
+Boutique;Camisas Hombres;30;45;Color;Blanca
+Boutique;Camisas Hombres;30;45;Color;Roja
+Boutique;Camisas Hombres;30;45;Color;Verde
+Boutique;Camisas Hombres;30;45;Color;Cafe
+Boutique;Camisas Hombres;30;45;Color;Amarilla
+Boutique;Camisas Hombres;30;45;Color;Negra
+Boutique;Camisas Hombres;30;45;Color;Estampada
+Boutique;Camisas Hombres;35;45;Mangas;Cortas
+Boutique;Camisas Hombres;35;45;Mangas;Largas
+Boutique;Camisas Hombres;35;45;Tallas;S
+Boutique;Camisas Hombres;35;45;Tallas;M
+Boutique;Camisas Hombres;35;45;Tallas;L
+Boutique;Camisas Hombres;35;45;Tallas;X
+Boutique;Camisas Hombres;35;45;Tallas;XL
+Boutique;Camisas Hombres;35;45;Color;Azul
+Boutique;Camisas Hombres;35;45;Color;Blanca
+Boutique;Camisas Hombres;35;45;Color;Roja
+Boutique;Camisas Hombres;35;45;Color;Verde
+Boutique;Camisas Hombres;35;45;Color;Cafe
+Boutique;Camisas Hombres;35;45;Color;Amarilla
+Boutique;Camisas Hombres;35;45;Color;Negra
+Boutique;Camisas Hombres;35;45;Color;Estampada
+Boutique;Camisas Hombres;40;45;Mangas;Cortas
+Boutique;Camisas Hombres;40;45;Mangas;Largas
+Boutique;Camisas Hombres;40;45;Tallas;S
+Boutique;Camisas Hombres;40;45;Tallas;M
+Boutique;Camisas Hombres;40;45;Tallas;L
+Boutique;Camisas Hombres;40;45;Tallas;X
+Boutique;Camisas Hombres;40;45;Tallas;XL
+Boutique;Camisas Hombres;40;45;Color;Azul
+Boutique;Camisas Hombres;40;45;Color;Blanca
+Boutique;Camisas Hombres;40;45;Color;Roja
+Boutique;Camisas Hombres;40;45;Color;Verde
+Boutique;Camisas Hombres;40;45;Color;Cafe
+Boutique;Camisas Hombres;40;45;Color;Amarilla
+Boutique;Camisas Hombres;40;45;Color;Negra
+Boutique;Camisas Hombres;40;45;Color;Estampada
+Boutique;Camisas Hombres;45;45;Mangas;Cortas
+Boutique;Camisas Hombres;45;45;Mangas;Largas
+Boutique;Camisas Hombres;45;45;Tallas;S
+Boutique;Camisas Hombres;45;45;Tallas;M
+Boutique;Camisas Hombres;45;45;Tallas;L
+Boutique;Camisas Hombres;45;45;Tallas;X
+Boutique;Camisas Hombres;45;45;Tallas;XL
+Boutique;Camisas Hombres;45;45;Color;Azul
+Boutique;Camisas Hombres;45;45;Color;Blanca
+Boutique;Camisas Hombres;45;45;Color;Roja
+Boutique;Camisas Hombres;45;45;Color;Verde
+Boutique;Camisas Hombres;45;45;Color;Cafe
+Boutique;Camisas Hombres;45;45;Color;Amarilla
+Boutique;Camisas Hombres;45;45;Color;Negra
+Boutique;Camisas Hombres;45;45;Color;Estampada
+Boutique;Camisas Mujeres;42;35;Material;Algodon
+Boutique;Camisas Mujeres;42;35;Material;Lino
+Boutique;Camisas Mujeres;42;35;Material;Lycra
+Boutique;Camisas Mujeres;42;35;Material;Saten
+Boutique;Camisas Mujeres;60;45;Material;Algodon
+Boutique;Camisas Mujeres;60;45;Material;Lino
+Boutique;Camisas Mujeres;60;45;Material;Lycra
+Boutique;Camisas Mujeres;60;45;Material;Saten
+Boutique;Camisas Mujeres;27;40;Material;Algodon
+Boutique;Camisas Mujeres;27;40;Material;Lino
+Boutique;Camisas Mujeres;27;40;Material;Lycra
+Boutique;Camisas Mujeres;27;40;Material;Saten
+Boutique;Camisas Mujeres;32;50;Material;Algodon
+Boutique;Camisas Mujeres;32;50;Material;Lino
+Boutique;Camisas Mujeres;32;50;Material;Lycra
+Boutique;Camisas Mujeres;32;50;Material;Saten
+Boutique;Camisas Hombres;30;45;Material;Algodon
+Boutique;Camisas Hombres;30;45;Material;Lino
+Boutique;Camisas Hombres;30;45;Material;Lycra
+Boutique;Camisas Hombres;30;45;Material;Saten
+Boutique;Camisas Hombres;35;45;Material;Algodon
+Boutique;Camisas Hombres;35;45;Material;Lino
+Boutique;Camisas Hombres;35;45;Material;Lycra
+Boutique;Camisas Hombres;35;45;Material;Saten
+Boutique;Camisas Hombres;40;45;Material;Algodon
+Boutique;Camisas Hombres;40;45;Material;Lino
+Boutique;Camisas Hombres;40;45;Material;Lycra
+Boutique;Camisas Hombres;40;45;Material;Saten
+Boutique;Camisas Hombres;45;45;Material;Algodon
+Boutique;Camisas Hombres;45;45;Material;Lino
+Boutique;Camisas Hombres;45;45;Material;Lycra
+Boutique;Camisas Hombres;45;45;Material;Saten
+Boutique;Pantalones Mujeres;70;80;Estilo;Jeans
+Boutique;Pantalones Mujeres;70;80;Estilo;Clasico
+Boutique;Pantalones Mujeres;70;80;Estilo;Legging
+Boutique;Pantalones Mujeres;70;80;Estilo;Short
+Boutique;Pantalones Mujeres;70;80;Estilo;Jogger
+Boutique;Pantalones Mujeres;70;80;Estilo;Chino
+Boutique;Pantalones Mujeres;70;80;Color;Negro
+Boutique;Pantalones Mujeres;70;80;Color;Azul
+Boutique;Pantalones Mujeres;70;80;Color;Marron
+Boutique;Pantalones Mujeres;70;80;Color;Blanco
+Boutique;Pantalones Mujeres;70;80;Color;Beige
+Boutique;Pantalones Mujeres;70;80;Color;Rojo
+Boutique;Pantalones Mujeres;70;80;Color;Estampado
+Boutique;Pantalones Mujeres;70;80;Tallas;4
+Boutique;Pantalones Mujeres;70;80;Tallas;6
+Boutique;Pantalones Mujeres;70;80;Tallas;8
+Boutique;Pantalones Mujeres;70;80;Tallas;10
+Boutique;Pantalones Mujeres;70;80;Tallas;12
+Boutique;Pantalones Mujeres;70;80;Tallas;14
+Boutique;Pantalones Mujeres;70;80;Tallas;16
+Boutique;Pantalones Mujeres;82;80;Estilo;Jeans
+Boutique;Pantalones Mujeres;82;80;Estilo;Clasico
+Boutique;Pantalones Mujeres;82;80;Estilo;Legging
+Boutique;Pantalones Mujeres;82;80;Estilo;Short
+Boutique;Pantalones Mujeres;82;80;Estilo;Jogger
+Boutique;Pantalones Mujeres;82;80;Estilo;Chino
+Boutique;Pantalones Mujeres;82;80;Color;Negro
+Boutique;Pantalones Mujeres;82;80;Color;Azul
+Boutique;Pantalones Mujeres;82;80;Color;Marron
+Boutique;Pantalones Mujeres;82;80;Color;Blanco
+Boutique;Pantalones Mujeres;82;80;Color;Beige
+Boutique;Pantalones Mujeres;82;80;Color;Rojo
+Boutique;Pantalones Mujeres;82;80;Color;Estampado
+Boutique;Pantalones Mujeres;82;80;Tallas;4
+Boutique;Pantalones Mujeres;82;80;Tallas;6
+Boutique;Pantalones Mujeres;82;80;Tallas;8
+Boutique;Pantalones Mujeres;82;80;Tallas;10
+Boutique;Pantalones Mujeres;82;80;Tallas;12
+Boutique;Pantalones Mujeres;82;80;Tallas;14
+Boutique;Pantalones Mujeres;82;80;Tallas;16
+Boutique;Pantalones Mujeres;75;80;Estilo;Jeans
+Boutique;Pantalones Mujeres;75;80;Estilo;Clasico
+Boutique;Pantalones Mujeres;75;80;Estilo;Legging
+Boutique;Pantalones Mujeres;75;80;Estilo;Short
+Boutique;Pantalones Mujeres;75;80;Estilo;Jogger
+Boutique;Pantalones Mujeres;75;80;Estilo;Chino
+Boutique;Pantalones Mujeres;75;80;Color;Negro
+Boutique;Pantalones Mujeres;75;80;Color;Azul
+Boutique;Pantalones Mujeres;75;80;Color;Marron
+Boutique;Pantalones Mujeres;75;80;Color;Blanco
+Boutique;Pantalones Mujeres;75;80;Color;Beige
+Boutique;Pantalones Mujeres;75;80;Color;Rojo
+Boutique;Pantalones Mujeres;75;80;Color;Estampado
+Boutique;Pantalones Mujeres;75;80;Tallas;4
+Boutique;Pantalones Mujeres;75;80;Tallas;6
+Boutique;Pantalones Mujeres;75;80;Tallas;8
+Boutique;Pantalones Mujeres;75;80;Tallas;10
+Boutique;Pantalones Mujeres;75;80;Tallas;12
+Boutique;Pantalones Mujeres;75;80;Tallas;14
+Boutique;Pantalones Mujeres;75;80;Tallas;16
+Boutique;Pantalones Mujeres;92;80;Estilo;Jeans
+Boutique;Pantalones Mujeres;92;80;Estilo;Clasico
+Boutique;Pantalones Mujeres;92;80;Estilo;Legging
+Boutique;Pantalones Mujeres;92;80;Estilo;Short
+Boutique;Pantalones Mujeres;92;80;Estilo;Jogger
+Boutique;Pantalones Mujeres;92;80;Estilo;Chino
+Boutique;Pantalones Mujeres;92;80;Color;Negro
+Boutique;Pantalones Mujeres;92;80;Color;Azul
+Boutique;Pantalones Mujeres;92;80;Color;Marron
+Boutique;Pantalones Mujeres;92;80;Color;Blanco
+Boutique;Pantalones Mujeres;92;80;Color;Beige
+Boutique;Pantalones Mujeres;92;80;Color;Rojo
+Boutique;Pantalones Mujeres;92;80;Color;Estampado
+Boutique;Pantalones Mujeres;92;80;Tallas;4
+Boutique;Pantalones Mujeres;92;80;Tallas;6
+Boutique;Pantalones Mujeres;92;80;Tallas;8
+Boutique;Pantalones Mujeres;92;80;Tallas;10
+Boutique;Pantalones Mujeres;92;80;Tallas;12
+Boutique;Pantalones Mujeres;92;80;Tallas;14
+Boutique;Pantalones Mujeres;92;80;Tallas;16
+Boutique;Pantalones Hombres;70;70;Estilo;Jeans
+Boutique;Pantalones Hombres;70;70;Estilo;Clasico
+Boutique;Pantalones Hombres;70;70;Estilo;Bermudas
+Boutique;Pantalones Hombres;70;70;Estilo;Chino
+Boutique;Pantalones Hombres;70;70;Color;Negro
+Boutique;Pantalones Hombres;70;70;Color;Azul
+Boutique;Pantalones Hombres;70;70;Color;Marron
+Boutique;Pantalones Hombres;70;70;Color;Blanco
+Boutique;Pantalones Hombres;70;70;Color;Beige
+Boutique;Pantalones Hombres;70;70;Color;Rojo
+Boutique;Pantalones Hombres;70;70;Tallas;30
+Boutique;Pantalones Hombres;70;70;Tallas;32
+Boutique;Pantalones Hombres;70;70;Tallas;34
+Boutique;Pantalones Hombres;70;70;Tallas;36
+Boutique;Pantalones Hombres;70;70;Tallas;38
+Boutique;Pantalones Hombres;70;70;Tallas;40
+Boutique;Pantalones Hombres;75;70;Estilo;Jeans
+Boutique;Pantalones Hombres;75;70;Estilo;Clasico
+Boutique;Pantalones Hombres;75;70;Estilo;Bermudas
+Boutique;Pantalones Hombres;75;70;Estilo;Chino
+Boutique;Pantalones Hombres;75;70;Color;Negro
+Boutique;Pantalones Hombres;75;70;Color;Azul
+Boutique;Pantalones Hombres;75;70;Color;Marron
+Boutique;Pantalones Hombres;75;70;Color;Blanco
+Boutique;Pantalones Hombres;75;70;Color;Beige
+Boutique;Pantalones Hombres;75;70;Color;Rojo
+Boutique;Pantalones Hombres;75;70;Tallas;30
+Boutique;Pantalones Hombres;75;70;Tallas;32
+Boutique;Pantalones Hombres;75;70;Tallas;34
+Boutique;Pantalones Hombres;75;70;Tallas;36
+Boutique;Pantalones Hombres;75;70;Tallas;38
+Boutique;Pantalones Hombres;75;70;Tallas;40
+Boutique;Pantalones Hombres;80;70;Estilo;Jeans
+Boutique;Pantalones Hombres;80;70;Estilo;Clasico
+Boutique;Pantalones Hombres;80;70;Estilo;Bermudas
+Boutique;Pantalones Hombres;80;70;Estilo;Chino
+Boutique;Pantalones Hombres;80;70;Color;Negro
+Boutique;Pantalones Hombres;80;70;Color;Azul
+Boutique;Pantalones Hombres;80;70;Color;Marron
+Boutique;Pantalones Hombres;80;70;Color;Blanco
+Boutique;Pantalones Hombres;80;70;Color;Beige
+Boutique;Pantalones Hombres;80;70;Color;Rojo
+Boutique;Pantalones Hombres;80;70;Tallas;30
+Boutique;Pantalones Hombres;80;70;Tallas;32
+Boutique;Pantalones Hombres;80;70;Tallas;34
+Boutique;Pantalones Hombres;80;70;Tallas;36
+Boutique;Pantalones Hombres;80;70;Tallas;38
+Boutique;Pantalones Hombres;80;70;Tallas;40
+Boutique;Pantalones Hombres;85;70;Estilo;Jeans
+Boutique;Pantalones Hombres;85;70;Estilo;Clasico
+Boutique;Pantalones Hombres;85;70;Estilo;Bermudas
+Boutique;Pantalones Hombres;85;70;Estilo;Chino
+Boutique;Pantalones Hombres;85;70;Color;Negro
+Boutique;Pantalones Hombres;85;70;Color;Azul
+Boutique;Pantalones Hombres;85;70;Color;Marron
+Boutique;Pantalones Hombres;85;70;Color;Blanco
+Boutique;Pantalones Hombres;85;70;Color;Beige
+Boutique;Pantalones Hombres;85;70;Color;Rojo
+Boutique;Pantalones Hombres;85;70;Tallas;30
+Boutique;Pantalones Hombres;85;70;Tallas;32
+Boutique;Pantalones Hombres;85;70;Tallas;34
+Boutique;Pantalones Hombres;85;70;Tallas;36
+Boutique;Pantalones Hombres;85;70;Tallas;38
+Boutique;Pantalones Hombres;85;70;Tallas;40
+Boutique;Faldas;45;60;Estilo;Largas
+Boutique;Faldas;45;60;Estilo;Mini
+Boutique;Faldas;45;60;Color;Estampada
+Boutique;Faldas;45;60;Color;Negro
+Boutique;Faldas;45;60;Color;Azul
+Boutique;Faldas;45;60;Color;Marron
+Boutique;Faldas;45;60;Color;Blanco
+Boutique;Faldas;45;60;Color;Beige
+Boutique;Faldas;45;60;Color;Rojo
+Boutique;Faldas;45;60;Tallas;4
+Boutique;Faldas;45;60;Tallas;6
+Boutique;Faldas;45;60;Tallas;8
+Boutique;Faldas;45;60;Tallas;10
+Boutique;Faldas;45;60;Tallas;12
+Boutique;Faldas;45;60;Tallas;14
+Boutique;Faldas;50;60;Estilo;Largas
+Boutique;Faldas;50;60;Estilo;Mini
+Boutique;Faldas;50;60;Color;Estampada
+Boutique;Faldas;50;60;Color;Negro
+Boutique;Faldas;50;60;Color;Azul
+Boutique;Faldas;50;60;Color;Marron
+Boutique;Faldas;50;60;Color;Blanco
+Boutique;Faldas;50;60;Color;Beige
+Boutique;Faldas;50;60;Color;Rojo
+Boutique;Faldas;50;60;Tallas;4
+Boutique;Faldas;50;60;Tallas;6
+Boutique;Faldas;50;60;Tallas;8
+Boutique;Faldas;50;60;Tallas;10
+Boutique;Faldas;50;60;Tallas;12
+Boutique;Faldas;50;60;Tallas;14
+Boutique;Faldas;52;60;Estilo;Largas
+Boutique;Faldas;52;60;Estilo;Mini
+Boutique;Faldas;52;60;Color;Estampada
+Boutique;Faldas;52;60;Color;Negro
+Boutique;Faldas;52;60;Color;Azul
+Boutique;Faldas;52;60;Color;Marron
+Boutique;Faldas;52;60;Color;Blanco
+Boutique;Faldas;52;60;Color;Beige
+Boutique;Faldas;52;60;Color;Rojo
+Boutique;Faldas;52;60;Tallas;4
+Boutique;Faldas;52;60;Tallas;6
+Boutique;Faldas;52;60;Tallas;8
+Boutique;Faldas;52;60;Tallas;10
+Boutique;Faldas;52;60;Tallas;12
+Boutique;Faldas;52;60;Tallas;14
+Boutique;Faldas;54;60;Estilo;Largas
+Boutique;Faldas;54;60;Estilo;Mini
+Boutique;Faldas;54;60;Color;Estampada
+Boutique;Faldas;54;60;Color;Negro
+Boutique;Faldas;54;60;Color;Azul
+Boutique;Faldas;54;60;Color;Marron
+Boutique;Faldas;54;60;Color;Blanco
+Boutique;Faldas;54;60;Color;Beige
+Boutique;Faldas;54;60;Color;Rojo
+Boutique;Faldas;54;60;Tallas;4
+Boutique;Faldas;54;60;Tallas;6
+Boutique;Faldas;54;60;Tallas;8
+Boutique;Faldas;54;60;Tallas;10
+Boutique;Faldas;54;60;Tallas;12
+Boutique;Faldas;54;60;Tallas;14
+Boutique;Vestidos;60;30;Estilo;Plisado
+Boutique;Vestidos;60;30;Estilo;Cuello redondo
+Boutique;Vestidos;60;30;Estilo;camisero
+Boutique;Vestidos;60;30;Color;Azul
+Boutique;Vestidos;60;30;Color;Rosado
+Boutique;Vestidos;60;30;Color;Beige
+Boutique;Vestidos;60;30;Color;Estampado
+Boutique;Vestidos;60;30;Mangas;Cortas
+Boutique;Vestidos;60;30;Mangas;Largas
+Boutique;Vestidos;60;30;Tallas;4
+Boutique;Vestidos;60;30;Tallas;6
+Boutique;Vestidos;60;30;Tallas;8
+Boutique;Vestidos;60;30;Tallas;10
+Boutique;Vestidos;60;30;Tallas;12
+Boutique;Vestidos;60;30;Tallas;14
+Boutique;Vestidos;60;30;Tallas;16
+Boutique;Vestidos;63;30;Estilo;Plisado
+Boutique;Vestidos;63;30;Estilo;Cuello redondo
+Boutique;Vestidos;63;30;Estilo;camisero
+Boutique;Vestidos;63;30;Color;Azul
+Boutique;Vestidos;63;30;Color;Rosado
+Boutique;Vestidos;63;30;Color;Beige
+Boutique;Vestidos;63;30;Color;Estampado
+Boutique;Vestidos;63;30;Mangas;Cortas
+Boutique;Vestidos;63;30;Mangas;Largas
+Boutique;Vestidos;63;30;Tallas;4
+Boutique;Vestidos;63;30;Tallas;6
+Boutique;Vestidos;63;30;Tallas;8
+Boutique;Vestidos;63;30;Tallas;10
+Boutique;Vestidos;63;30;Tallas;12
+Boutique;Vestidos;63;30;Tallas;14
+Boutique;Vestidos;63;30;Tallas;16
+Boutique;Vestidos;66;30;Estilo;Plisado
+Boutique;Vestidos;66;30;Estilo;Cuello redondo
+Boutique;Vestidos;66;30;Estilo;camisero
+Boutique;Vestidos;66;30;Color;Azul
+Boutique;Vestidos;66;30;Color;Rosado
+Boutique;Vestidos;66;30;Color;Beige
+Boutique;Vestidos;66;30;Color;Estampado
+Boutique;Vestidos;66;30;Mangas;Cortas
+Boutique;Vestidos;66;30;Mangas;Largas
+Boutique;Vestidos;66;30;Tallas;4
+Boutique;Vestidos;66;30;Tallas;6
+Boutique;Vestidos;66;30;Tallas;8
+Boutique;Vestidos;66;30;Tallas;10
+Boutique;Vestidos;66;30;Tallas;12
+Boutique;Vestidos;66;30;Tallas;14
+Boutique;Vestidos;66;30;Tallas;16
+Boutique;Vestidos;69;30;Estilo;Plisado
+Boutique;Vestidos;69;30;Estilo;Cuello redondo
+Boutique;Vestidos;69;30;Estilo;camisero
+Boutique;Vestidos;69;30;Color;Azul
+Boutique;Vestidos;69;30;Color;Rosado
+Boutique;Vestidos;69;30;Color;Beige
+Boutique;Vestidos;69;30;Color;Estampado
+Boutique;Vestidos;69;30;Mangas;Cortas
+Boutique;Vestidos;69;30;Mangas;Largas
+Boutique;Vestidos;69;30;Tallas;4
+Boutique;Vestidos;69;30;Tallas;6
+Boutique;Vestidos;69;30;Tallas;8
+Boutique;Vestidos;69;30;Tallas;10
+Boutique;Vestidos;69;30;Tallas;12
+Boutique;Vestidos;69;30;Tallas;14
+Boutique;Vestidos;69;30;Tallas;16
+Boutique;Blusas;25;50;Mangas;Largas
+Boutique;Blusas;25;50;Mangas;tres cuartos
+Boutique;Blusas;25;50;Mangas;Cortas
+Boutique;Blusas;25;50;Mangas;Sisas
+Boutique;Blusas;25;50;Mangas;Acampanadas
+Boutique;Blusas;25;50;Mangas;Enbombadas
+Boutique;Blusas;25;50;Cuello;Mao
+Boutique;Blusas;25;50;Cuello;Alto
+Boutique;Blusas;25;50;Color;Azul
+Boutique;Blusas;25;50;Color;Amarilla
+Boutique;Blusas;25;50;Color;Verde
+Boutique;Blusas;25;50;Color;Fuscia
+Boutique;Blusas;25;50;Color;Rosada
+Boutique;Blusas;25;50;Color;Roja
+Boutique;Blusas;25;50;Estilo;Satinada
+Boutique;Blusas;25;50;Estilo;Estampada
+Boutique;Blusas;25;50;Tallas;XS
+Boutique;Blusas;25;50;Tallas;S
+Boutique;Blusas;25;50;Tallas;M
+Boutique;Blusas;25;50;Tallas;L
+Boutique;Blusas;25;50;Tallas;XL
+Boutique;Blusas;25;50;Tallas;XXL
+Boutique;Blusas;26;50;Mangas;Largas
+Boutique;Blusas;26;50;Mangas;tres cuartos
+Boutique;Blusas;26;50;Mangas;Cortas
+Boutique;Blusas;26;50;Mangas;Sisas
+Boutique;Blusas;26;50;Mangas;Acampanadas
+Boutique;Blusas;26;50;Mangas;Enbombadas
+Boutique;Blusas;26;50;Cuello;Mao
+Boutique;Blusas;26;50;Cuello;Alto
+Boutique;Blusas;26;50;Color;Azul
+Boutique;Blusas;26;50;Color;Amarilla
+Boutique;Blusas;26;50;Color;Verde
+Boutique;Blusas;26;50;Color;Fuscia
+Boutique;Blusas;26;50;Color;Rosada
+Boutique;Blusas;26;50;Color;Roja
+Boutique;Blusas;26;50;Estilo;Satinada
+Boutique;Blusas;26;50;Estilo;Estampada
+Boutique;Blusas;26;50;Tallas;XS
+Boutique;Blusas;26;50;Tallas;S
+Boutique;Blusas;26;50;Tallas;M
+Boutique;Blusas;26;50;Tallas;L
+Boutique;Blusas;26;50;Tallas;XL
+Boutique;Blusas;26;50;Tallas;XXL
+Boutique;Blusas;27;50;Mangas;Largas
+Boutique;Blusas;27;50;Mangas;tres cuartos
+Boutique;Blusas;27;50;Mangas;Cortas
+Boutique;Blusas;27;50;Mangas;Sisas
+Boutique;Blusas;27;50;Mangas;Acampanadas
+Boutique;Blusas;27;50;Mangas;Enbombadas
+Boutique;Blusas;27;50;Cuello;Mao
+Boutique;Blusas;27;50;Cuello;Alto
+Boutique;Blusas;27;50;Color;Azul
+Boutique;Blusas;27;50;Color;Amarilla
+Boutique;Blusas;27;50;Color;Verde
+Boutique;Blusas;27;50;Color;Fuscia
+Boutique;Blusas;27;50;Color;Rosada
+Boutique;Blusas;27;50;Color;Roja
+Boutique;Blusas;27;50;Estilo;Satinada
+Boutique;Blusas;27;50;Estilo;Estampada
+Boutique;Blusas;27;50;Tallas;XS
+Boutique;Blusas;27;50;Tallas;S
+Boutique;Blusas;27;50;Tallas;M
+Boutique;Blusas;27;50;Tallas;L
+Boutique;Blusas;27;50;Tallas;XL
+Boutique;Blusas;27;50;Tallas;XXL
+Boutique;Blusas;29;50;Mangas;Largas
+Boutique;Blusas;29;50;Mangas;tres cuartos
+Boutique;Blusas;29;50;Mangas;Cortas
+Boutique;Blusas;29;50;Mangas;Sisas
+Boutique;Blusas;29;50;Mangas;Acampanadas
+Boutique;Blusas;29;50;Mangas;Enbombadas
+Boutique;Blusas;29;50;Cuello;Mao
+Boutique;Blusas;29;50;Cuello;Alto
+Boutique;Blusas;29;50;Color;Azul
+Boutique;Blusas;29;50;Color;Amarilla
+Boutique;Blusas;29;50;Color;Verde
+Boutique;Blusas;29;50;Color;Fuscia
+Boutique;Blusas;29;50;Color;Rosada
+Boutique;Blusas;29;50;Color;Roja
+Boutique;Blusas;29;50;Estilo;Satinada
+Boutique;Blusas;29;50;Estilo;Estampada
+Boutique;Blusas;29;50;Tallas;XS
+Boutique;Blusas;29;50;Tallas;S
+Boutique;Blusas;29;50;Tallas;M
+Boutique;Blusas;29;50;Tallas;L
+Boutique;Blusas;29;50;Tallas;XL
+Boutique;Blusas;29;50;Tallas;XXL
+Boutique;Camisetas Mujeres;20;63;Cuello;Alto
+Boutique;Camisetas Mujeres;20;63;Mangas;Sisa
+Boutique;Camisetas Mujeres;20;63;Estilo;Estampada
+Boutique;Camisetas Mujeres;20;63;Estilo;Escote en V
+Boutique;Camisetas Mujeres;20;63;Color;Azul
+Boutique;Camisetas Mujeres;20;63;Color;Amarilla
+Boutique;Camisetas Mujeres;20;63;Color;Verde
+Boutique;Camisetas Mujeres;20;63;Color;Fuscia
+Boutique;Camisetas Mujeres;20;63;Color;Rosada
+Boutique;Camisetas Mujeres;20;63;Color;Roja
+Boutique;Camisetas Mujeres;20;63;Color;Estampada
+Boutique;Camisetas Mujeres;20;63;Tallas;XS
+Boutique;Camisetas Mujeres;20;63;Tallas;S
+Boutique;Camisetas Mujeres;20;63;Tallas;M
+Boutique;Camisetas Mujeres;20;63;Tallas;L
+Boutique;Camisetas Mujeres;20;63;Tallas;XL
+Boutique;Camisetas Mujeres;20;63;Tallas;XXL
+Boutique;Camisetas Mujeres;21;63;Cuello;Alto
+Boutique;Camisetas Mujeres;21;63;Mangas;Sisa
+Boutique;Camisetas Mujeres;21;63;Estilo;Estampada
+Boutique;Camisetas Mujeres;21;63;Estilo;Escote en V
+Boutique;Camisetas Mujeres;21;63;Color;Azul
+Boutique;Camisetas Mujeres;21;63;Color;Amarilla
+Boutique;Camisetas Mujeres;21;63;Color;Verde
+Boutique;Camisetas Mujeres;21;63;Color;Fuscia
+Boutique;Camisetas Mujeres;21;63;Color;Rosada
+Boutique;Camisetas Mujeres;21;63;Color;Roja
+Boutique;Camisetas Mujeres;21;63;Color;Estampada
+Boutique;Camisetas Mujeres;21;63;Tallas;XS
+Boutique;Camisetas Mujeres;21;63;Tallas;S
+Boutique;Camisetas Mujeres;21;63;Tallas;M
+Boutique;Camisetas Mujeres;21;63;Tallas;L
+Boutique;Camisetas Mujeres;21;63;Tallas;XL
+Boutique;Camisetas Mujeres;21;63;Tallas;XXL
+Boutique;Camisetas Mujeres;22;63;Cuello;Alto
+Boutique;Camisetas Mujeres;22;63;Mangas;Sisa
+Boutique;Camisetas Mujeres;22;63;Estilo;Estampada
+Boutique;Camisetas Mujeres;22;63;Estilo;Escote en V
+Boutique;Camisetas Mujeres;22;63;Color;Azul
+Boutique;Camisetas Mujeres;22;63;Color;Amarilla
+Boutique;Camisetas Mujeres;22;63;Color;Verde
+Boutique;Camisetas Mujeres;22;63;Color;Fuscia
+Boutique;Camisetas Mujeres;22;63;Color;Rosada
+Boutique;Camisetas Mujeres;22;63;Color;Roja
+Boutique;Camisetas Mujeres;22;63;Color;Estampada
+Boutique;Camisetas Mujeres;22;63;Tallas;XS
+Boutique;Camisetas Mujeres;22;63;Tallas;S
+Boutique;Camisetas Mujeres;22;63;Tallas;M
+Boutique;Camisetas Mujeres;22;63;Tallas;L
+Boutique;Camisetas Mujeres;22;63;Tallas;XL
+Boutique;Camisetas Mujeres;22;63;Tallas;XXL
+Boutique;Camisetas Mujeres;23;63;Cuello;Alto
+Boutique;Camisetas Mujeres;23;63;Mangas;Sisa
+Boutique;Camisetas Mujeres;23;63;Estilo;Estampada
+Boutique;Camisetas Mujeres;23;63;Estilo;Escote en V
+Boutique;Camisetas Mujeres;23;63;Color;Azul
+Boutique;Camisetas Mujeres;23;63;Color;Amarilla
+Boutique;Camisetas Mujeres;23;63;Color;Verde
+Boutique;Camisetas Mujeres;23;63;Color;Fuscia
+Boutique;Camisetas Mujeres;23;63;Color;Rosada
+Boutique;Camisetas Mujeres;23;63;Color;Roja
+Boutique;Camisetas Mujeres;23;63;Color;Estampada
+Boutique;Camisetas Mujeres;23;63;Tallas;XS
+Boutique;Camisetas Mujeres;23;63;Tallas;S
+Boutique;Camisetas Mujeres;23;63;Tallas;M
+Boutique;Camisetas Mujeres;23;63;Tallas;L
+Boutique;Camisetas Mujeres;23;63;Tallas;XL
+Boutique;Camisetas Mujeres;23;63;Tallas;XXL
+Boutique;Camisetas Hombres;20;50;Cuello;Henley
+Boutique;Camisetas Hombres;20;50;Estilo;Estampada
+Boutique;Camisetas Hombres;20;50;Estilo;Con bolsillo
+Boutique;Camisetas Hombres;20;50;Color;Verde
+Boutique;Camisetas Hombres;20;50;Color;Blanca
+Boutique;Camisetas Hombres;20;50;Color;Roja
+Boutique;Camisetas Hombres;20;50;Color;Negra
+Boutique;Camisetas Hombres;20;50;Color;Azul
+Boutique;Camisetas Hombres;20;50;Color;Gris
+Boutique;Camisetas Hombres;20;50;Tallas;S
+Boutique;Camisetas Hombres;20;50;Tallas;M
+Boutique;Camisetas Hombres;20;50;Tallas;L
+Boutique;Camisetas Hombres;20;50;Tallas;X
+Boutique;Camisetas Hombres;20;50;Tallas;XL
+Boutique;Camisetas Hombres;22;50;Cuello;Henley
+Boutique;Camisetas Hombres;22;50;Estilo;Estampada
+Boutique;Camisetas Hombres;22;50;Estilo;Con bolsillo
+Boutique;Camisetas Hombres;22;50;Color;Verde
+Boutique;Camisetas Hombres;22;50;Color;Blanca
+Boutique;Camisetas Hombres;22;50;Color;Roja
+Boutique;Camisetas Hombres;22;50;Color;Negra
+Boutique;Camisetas Hombres;22;50;Color;Azul
+Boutique;Camisetas Hombres;22;50;Color;Gris
+Boutique;Camisetas Hombres;22;50;Tallas;S
+Boutique;Camisetas Hombres;22;50;Tallas;M
+Boutique;Camisetas Hombres;22;50;Tallas;L
+Boutique;Camisetas Hombres;22;50;Tallas;X
+Boutique;Camisetas Hombres;22;50;Tallas;XL
+Boutique;Camisetas Hombres;24;50;Cuello;Henley
+Boutique;Camisetas Hombres;24;50;Estilo;Estampada
+Boutique;Camisetas Hombres;24;50;Estilo;Con bolsillo
+Boutique;Camisetas Hombres;24;50;Color;Verde
+Boutique;Camisetas Hombres;24;50;Color;Blanca
+Boutique;Camisetas Hombres;24;50;Color;Roja
+Boutique;Camisetas Hombres;24;50;Color;Negra
+Boutique;Camisetas Hombres;24;50;Color;Azul
+Boutique;Camisetas Hombres;24;50;Color;Gris
+Boutique;Camisetas Hombres;24;50;Tallas;S
+Boutique;Camisetas Hombres;24;50;Tallas;M
+Boutique;Camisetas Hombres;24;50;Tallas;L
+Boutique;Camisetas Hombres;24;50;Tallas;X
+Boutique;Camisetas Hombres;24;50;Tallas;XL
+Boutique;Camisetas Hombres;26;50;Cuello;Henley
+Boutique;Camisetas Hombres;26;50;Estilo;Estampada
+Boutique;Camisetas Hombres;26;50;Estilo;Con bolsillo
+Boutique;Camisetas Hombres;26;50;Color;Verde
+Boutique;Camisetas Hombres;26;50;Color;Blanca
+Boutique;Camisetas Hombres;26;50;Color;Roja
+Boutique;Camisetas Hombres;26;50;Color;Negra
+Boutique;Camisetas Hombres;26;50;Color;Azul
+Boutique;Camisetas Hombres;26;50;Color;Gris
+Boutique;Camisetas Hombres;26;50;Tallas;S
+Boutique;Camisetas Hombres;26;50;Tallas;M
+Boutique;Camisetas Hombres;26;50;Tallas;L
+Boutique;Camisetas Hombres;26;50;Tallas;X
+Boutique;Camisetas Hombres;26;50;Tallas;XL
+Restaurante;Carnes;10;15;Entrecote;125 gramos
+Restaurante;Carnes;11;12;Faux filet;125 gramos
+Restaurante;Carnes;10;10;Lomo;150 gramos
+Restaurante;Carnes;11;15;bisteck;125 gramos
+Restaurante;Pescados;10;15;Boca chico;125 gramos
+Restaurante;Pescados;11;12;Sardina;125 gramos
+Restaurante;Pescados;10;10;Bagre;150 gramos
+Restaurante;Pescados;11;15;Atun;125 gramos
+Restaurante;Legumbres;5;15;Habichuelas;150 gramos
+Restaurante;Legumbres;6;15;Coliflor;150 gramos
+Restaurante;Legumbres;4;15;Arvejas;150 gramos
+Restaurante;Legumbres;6;15;Berenjenas;150 gramos
+Restaurante;Legumbres;5;15;Espinacas;150 gramos
+Restaurante;Granos;5;50;Arroz;150 gramos
+Restaurante;Granos;5;50;Lentejas;150 gramos
+Restaurante;Granos;5;50;Frijoles;150 gramos
+Restaurante;Granos;5;50;Garbanzos;150 gramos
+Restaurante;Granos;5;50;Blanquillos;150 gramos
+Restaurante;Granos;5;50;Semula;150 gramos
+Restaurante;Pastas;5;50;Espaguetis;150 gramos
+Restaurante;Pastas;5;50;Linguinis;150 gramos
+Restaurante;Pastas;5;50;Coquillettes;150 gramos
+Restaurante;Pastas;5;50;Lasagnas;150 gramos
+Restaurante;Varios;5;25;Pandebono;60 gramos
+Restaurante;Varios;5;25;bunuelos;60 gramos
+Restaurante;Varios;5;25;Arepas;60 gramos
+Restaurante;Bebidas sin ancohol;2;100;Thé limon;125 ml
+Restaurante;Bebidas sin ancohol;2;100;Thé naranja;125 ml
+Restaurante;Bebidas sin ancohol;2;100;Thé  verde;125 ml
+Restaurante;Bebidas sin ancohol;2;100;Thé menta;125 ml
+Restaurante;Bebidas sin ancohol;2;100;Aromaticas Naturales;125 ml
+Restaurante;Bebidas sin ancohol;2;100;Aromaticas Digestivas;125 ml
+Restaurante;Bebidas sin ancohol;2;100;Café;25 ml
+Restaurante;Bebidas sin ancohol;4;100;Café con leche;75 ml
+Restaurante;Bebidas sin ancohol;4;100;Capuchino;50 ml 
+Restaurante;Bebidas sin ancohol;4;100;Café malteado;75 ml
+Restaurante;Bebidas sin ancohol;3;50;Agua de Panela con limon;125 ml
+Restaurante;Bebidas sin ancohol;4;100;Sodas;126 ml
+Restaurante;Bebidas con alcohol;6;100;Cerveza en botella;125 ml
+Restaurante;Bebidas con alcohol;6;50;Cerveza a pression;125 ml

@@ -27,6 +27,7 @@ class ProductoBaseSchema(BaseModel):
 class ProductoVariacionSchema(BaseModel):
     id: int
     producto_base_id: int
+    descripcion: str # Agregamos la nueva propiedad
     precio: float
     stock: int
 
@@ -52,6 +53,7 @@ class RolCreate(RolBase):
 
 class RolResponse(RolBase):
     id_rol: int
+    nombre_del_rol: str
 
     class Config:
         from_attributes = True
@@ -70,7 +72,7 @@ class UsuarioCreate(UsuarioBase):
 class UsuarioResponse(UsuarioBase):
     id_usuario: int
     fecha_creacion_cuenta: datetime
-    rol: RolResponse  # Para devolver el rol del usuario
+    rol: str  # Para devolver el rol del usuario solamente
 
     class Config:
         from_attributes = True

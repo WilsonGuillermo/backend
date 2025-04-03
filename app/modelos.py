@@ -31,6 +31,7 @@ class ProductoVariacion(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     producto_base_id = Column(Integer, ForeignKey("producto_base.id"))
+    descripcion = Column(String(255), nullable=False)
     precio = Column(Float, nullable=False)
     stock = Column(Integer, default=0)
 
