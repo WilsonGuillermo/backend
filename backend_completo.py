@@ -1,6 +1,9 @@
 
 """ Configuración de la conexión a la base de datos MySQL
     es realisada en el modulo gestion_bdd """
+""" Modificaciones debido a la reestructuracion de la bdd """
+""" fecha_de_nacimiento => fecha_nacimiento """
+""" el rol est en la posicion 8 de la tabla usuarios, antes estaba en la 5 """
 
 from flask import Flask, request, jsonify
 import gestion_bdd as mibase
@@ -77,7 +80,7 @@ def agregarCuenta():
 
         contrasena = request.json['password']
 
-        fecha_de_nacimiento = request.json['birth_date']
+        fecha_nacimiento = request.json['birth_date']
 
         email = request.json['email']
 
@@ -85,7 +88,7 @@ def agregarCuenta():
 
         creacion_date = datetime.now()
 
-        if not all([nombre, apellido, nombre_usuario, email, contrasena, fecha_de_nacimiento, rol]):
+        if not all([nombre, apellido, nombre_usuario, email, contrasena, fecha_nacimiento, rol]):
             return jsonify({"error": "Todos los campos son obligatorios"}), 400
 
         if not is_valid_password(contrasena):
@@ -95,7 +98,7 @@ def agregarCuenta():
         if not is_valid_login(nombre_usuario):
             return jsonify({"error": "Login already exists"}), 409
         
-        requete = "insert into usuarios (nombre, apellido, nombre_usuario, email, contrasena, fecha_de_nacimiento, rol, fecha_creacion_cuenta) values ( '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')"%(nombre, apellido, nombre_usuario, email, contrasena, fecha_de_nacimiento, rol, creacion_date)
+        requete = "insert into usuarios (nombre, apellido, nombre_usuario, email, contrasena, fecha_nacimiento, rol, fecha_creacion_cuenta) values ( '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')"%(nombre, apellido, nombre_usuario, email, contrasena, fecha_nacimiento, rol, creacion_date)
 
         print("la requete bis es :", requete)
 
@@ -112,7 +115,7 @@ def agregarCuenta():
 
 @app.route('/modificarCuenta/<int:id>', methods=['PUT'])
 def modificarCuenta(id):
-    # Creacion de la cuenta utilisador
+    # Modificacion de la cuenta utilisador
     try:
         data = request.get_json()
 
@@ -215,6 +218,7 @@ def ingredientes_referencial():
         # Si el usuario no existe, retornar un mensaje de error
         return jsonify({'error': 'Usuario o contraseña incorrectos'}), 401
 
+# Modificacion debido a la nueva disposicion de la BDD
 @app.route('/usuarios', methods=['GET'])
 def usuarios():
     # Usar request.args para obtener los parámetros de la consulta (query string)
@@ -226,7 +230,7 @@ def usuarios():
 
     lista_usuarios = bdd.consultacion_generique(requete)
 
-    usuarios_ok = [{"id" : usuarios[0], "name": usuarios[1], "lastname": usuarios[2], "rol": usuarios[5]} for usuarios in lista_usuarios]
+    usuarios_ok = [{"id" : usuarios[0], "name": usuarios[1], "lastname": usuarios[2], "rol": usuarios[8]} for usuarios in lista_usuarios]
 
     print("los usuarios son: ",usuarios_ok)
 
