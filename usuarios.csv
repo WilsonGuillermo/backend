@@ -1,0 +1,11 @@
+id_usuario,nombre,apellido,nombre_usuario,contrasena,email,fecha_nacimiento,fecha_creacion_cuenta,rol
+1,Wilson,Mosquera,Wilson,WilsonMemo1$,wilsonmemo@hotmail.com,"1964-04-14 14:05:58","2025-04-03 14:16:57",Admin
+3,Guillermo,Garcia,Guillermo,Guillermo1$,Guillermo@hotmail.com,"1964-04-14 14:05:58","2025-04-03 14:26:28",Aseador
+4,Martha,Rodriguez,Martha,Martha1$,Martha@hotmail.com,"1966-10-12 14:05:58","2025-04-03 14:45:29",Responsable
+5,Nicolas,Mosquera,Nicolas,Nicolas1$,Nicolas@hotmail.com,"1998-07-13 14:05:58","2025-04-03 14:52:29",Vendedor
+6,Sebastien,Mosquera,Sebastien,Sebastien1$,Sebastien@hotmail.com,"2003-01-31 14:05:58","2025-04-03 14:53:21",Cocinero
+7,Cesar,Mosquera,Cesar,Mosquera1$,Cesar@hotmail.com,"2000-04-04 00:00:00","2025-04-04 11:28:08",Aseador
+8,Patricia,Zamorano,Patricia,Patricia1$,patricia@hotmail.com,"1998-04-04 00:00:00","2025-04-04 14:23:55",Cocinero
+9,"Maria Jose",Mosquera,Majo,MariaJose1$,majo@hotmail.com,"1994-04-04 00:00:00","2025-04-04 15:43:00",Admin
+10,Jorge,Sanchez,Jorge,JorgeSanchez1$,sanchez@hotmail.com,"1987-04-04 00:00:00","2025-04-04 17:25:29",Responsable
+11,Felipe,Garcia,Felipe,FelipeG1$,FelipeG@hotmail.com,"1956-04-07 10:51:14","2025-04-07 10:52:48",Contador

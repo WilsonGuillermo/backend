@@ -70,5 +70,5 @@ class Usuario(Base):
     fecha_nacimiento = Column(DateTime, nullable=True)
     fecha_creacion_cuenta = Column(DateTime, default=datetime.utcnow)
 
-    rol = Column(String(50), ForeignKey("roles.nombre_del_rol"))
+    rol_id = Column(Integer, ForeignKey("roles.id_rol"))
     profil = relationship("Rol", back_populates="usuarios")

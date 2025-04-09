@@ -1,0 +1,6 @@
+1,Admin,"cocina, sala, bar, mantenimiento, stockage_alimentacion, caja"
+2,Responsable,"stockage_alimentacion, sala, bar, mantenimiento, caja"
+3,Cocinero,"cocina, bar, mantenimiento, stockage_alimentacion"
+4,Vendedor,"sala, bar, mantenimiento, caja"
+5,Aseador,"sala, bar, mantenimiento, caja"
+6,Contador,"stockage_alimentation, caja, ventas, inventarios"
