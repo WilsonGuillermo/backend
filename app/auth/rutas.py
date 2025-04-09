@@ -72,7 +72,7 @@ def listar_usuarios(db: Session = Depends(get_db)):
 
 @router.get("/verificarCuenta/{login}", response_model=schemas.UsuarioOut)
 def verificar_cuenta(login: str, db: Session = Depends(get_db)):
-    print("El usuario es: $usuario")
+    #print("El usuario es: $usuario")
     try:
         print("Login recibido:", login)
         usuario = db.query(modelos.Usuario).filter_by(nombre_usuario = login).first()
