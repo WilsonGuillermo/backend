@@ -1,49 +1,11 @@
-# Archivo: schemas.py
-# Version 1.1.0 WilsonGuillermo
+# Archivo: usuario.py
+# Version 1.0.0 WilsonGuillermo
 # Agregamos las clases RolOut y UsuarioOut
+# Agregamos un flag para la primera connexion del usuario
 
 from pydantic import BaseModel, EmailStr
 from typing import List, Optional
 from datetime import datetime
-
-# 📌 Esquema para Tipo de Tienda
-class TipoTiendaSchema(BaseModel):
-    id: int
-    nombre: str
-
-    class Config:
-        orm_mode = True
-
-# 📌 Esquema para Producto Base
-class ProductoBaseSchema(BaseModel):
-    id: int
-    nombre: str
-    descripcion: Optional[str] = None
-    tipo_tienda_id: int
-
-    class Config:
-        orm_mode = True
-
-# 📌 Esquema para Producto Variación
-class ProductoVariacionSchema(BaseModel):
-    id: int
-    producto_base_id: int
-    descripcion: str # Agregamos la nueva propiedad
-    precio: float
-    stock: int
-
-    class Config:
-        orm_mode = True
-
-# 📌 Esquema para Atributos de Producto
-class AtributoProductoSchema(BaseModel):
-    id: int
-    variacion_id: int
-    nombre: str
-    valor: str
-
-    class Config:
-        orm_mode = True
 
 class RolBase(BaseModel):
     nombre_del_rol: str
@@ -72,8 +34,15 @@ class UsuarioBase(BaseModel):
     fecha_nacimiento: Optional[datetime] = None
 
 class UsuarioCreate(UsuarioBase):
-    contrasena: str  # Se debe hashear antes de guardarlo en la BD
+    nombre_usuario: str
+    contrasena: str # Se debe hashear antes de guardarlo en la BD
+    nombre: str
+    apellido: str
+    email: str
+    #rol: str
     rol_id: int
+    primer_acceso: Optional[bool] = True  # Opcional
+
 
 class UsuarioResponse(UsuarioBase):
     id_usuario: int
@@ -84,9 +53,14 @@ class UsuarioResponse(UsuarioBase):
         from_attributes = True
 
 class UsuarioOut(UsuarioBase):
+    id_usuario: int
     nombre_usuario: str
-    contrasena: str
+    nombre: str
+    apellido: str
+    email: str
+    #rol: str
     rol_id: int
+    primer_acceso: bool  # NUEVO
 
     class Config:
         orm_mode = True
@@ -96,10 +70,12 @@ class LoginRequest(BaseModel):
     contrasena: str
 
 class LoginResponse(BaseModel):
+    id_usuario: int
     access_token: str
     token_type: str
     nombre_usuario: str
     profil: str
+    primer_acceso: bool
 
 class UsuarioConRol(BaseModel):
     id_usuario: int
@@ -120,3 +96,6 @@ class UsuarioUpdate(BaseModel):
 
     class Config:
         orm_mode = True
+
+class CambiarContrasenaRequest(BaseModel):
+    contrasena: str

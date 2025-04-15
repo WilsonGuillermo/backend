@@ -1,9 +1,9 @@
-# Aquí definimos las tablas de la base de datos:
+# Aquí definimos las tablas de la gestion de los productos de la base de datos:
 # Version 1.0.0 WilsonGuillermo
 
 from sqlalchemy import Column, Integer, String, ForeignKey, Float, Boolean, DateTime
 from sqlalchemy.orm import relationship
-from database import Base
+from bdd.database import Base
 from datetime import datetime
 
 # 📌 Tipo de tienda (Ej: Ropa, Supermercado, Ferretería, etc.)
@@ -21,9 +21,10 @@ class ProductoBase(Base):
     nombre = Column(String(255), nullable=False)
     descripcion = Column(String(500), nullable=True)
     tipo_tienda_id = Column(Integer, ForeignKey("tipo_tienda.id"))
+    activo = Column(Boolean, default=True)
 
     tipo_tienda = relationship("TipoTienda")
-    variaciones = relationship("ProductoVariacion", back_populates="producto_base")
+    variaciones = relationship("ProductoVariacion", back_populates="producto_base", cascade="all, delete-orphan")
 
 # 📌 Variaciones de productos (Ej: "Camiseta Azul - Talla M")
 class ProductoVariacion(Base):
@@ -48,27 +49,3 @@ class AtributoProducto(Base):
     valor = Column(String(100), nullable=False)
 
     variacion = relationship("ProductoVariacion", back_populates="atributos")
-
-class Rol(Base):
-    __tablename__ = "roles"
-
-    id_rol = Column(Integer, primary_key=True, index=True)
-    nombre_del_rol = Column(String(50), unique=True, nullable=False)
-    derechos = Column(String(255), nullable=True)
-
-    usuarios = relationship("Usuario", back_populates="profil")
-
-class Usuario(Base):
-    __tablename__ = "usuarios"
-
-    id_usuario = Column(Integer, primary_key=True, index=True)
-    nombre = Column(String(100), nullable=False)
-    apellido = Column(String(100), nullable=False)
-    nombre_usuario = Column(String(100), unique=True, nullable=False)
-    contrasena = Column(String(255), nullable=False)  # Debe estar hasheada
-    email = Column(String(255), unique=True, nullable=False)
-    fecha_nacimiento = Column(DateTime, nullable=True)
-    fecha_creacion_cuenta = Column(DateTime, default=datetime.utcnow)
-
-    rol_id = Column(Integer, ForeignKey("roles.id_rol"))
-    profil = relationship("Rol", back_populates="usuarios")
